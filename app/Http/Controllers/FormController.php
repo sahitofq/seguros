@@ -148,10 +148,10 @@ class FormController extends Controller
             //dd($solidaria);
 
             //****Seguro Bolivar */
-            //$tiempo_inicial = microtime(true);
+            $tiempo_inicial = microtime(true);
             //$segBolivar = new BolivarController();
             //$bolivar = $segBolivar->getCotizacionRequest($usuario);
-            //$tiempo_final = microtime(true);
+            $tiempo_final = microtime(true);
 
             //dd($bolivar);
             if (isset($bolivar["data"])) {
