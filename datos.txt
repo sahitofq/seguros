@@ -1,0 +1,17 @@
+
+Ciudad
+Codigo fecolda
+Tipo de Documento
+Modelo
+Género
+
+
+https://servicios.laequidadseguros.coop/ServicioEstructuraQA
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://www.example.org/servicioEstructura/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ser:getProducto>
+         <codPla>011701</codPla>
+      </ser:getProducto>
+   </soapenv:Body>
+</soapenv:Envelope>

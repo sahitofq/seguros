@@ -1,0 +1,155 @@
+.checkbox-todo-riesgo {
+    display: flex;
+    background: #fec170;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 50px;
+}
+
+.checkbox-tr-wrapper-left,
+.checkbox-tr-wrapper-right {
+    width: 50%;
+}
+
+.checkbox-todo-riesgo input {
+    display: none;
+}
+
+.checkbox-todo-riesgo input:checked+label .checkbox-tr {
+    background: #fea328;
+}
+
+.checkbox-todo-riesgo input:checked+label .checkbox-radio:after {
+    opacity: 1;
+}
+
+.checkbox-todo-riesgo label {
+    display: block;
+    height: 100%;
+    cursor: pointer;
+}
+
+.checkbox-tr {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-tr:hover {
+    background: #f1b461;
+}
+
+.checkbox-tr span {
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.checkbox-radio {
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 12px;
+}
+
+.checkbox-radio:after {
+    width: 12px;
+    height: 12px;
+    background: rgb(43, 43, 43);
+    border-radius: 50%;
+    content: "";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    position: absolute;
+}
+
+.error-message-wrap {
+    padding: 10px 16px;
+    color: #a73131;
+    font-size: 16px;
+    margin-bottom: 12px;
+    background: #ffe1e1;
+    display: none;
+}
+
+.error-message-wrap.show {
+    display: block;
+}
+
+
+/*-----------------LOADER CON CSS--------------------------*/
+
+#loader {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    background: #000000a3;
+    z-index: 20;
+}
+
+.spinner {
+    margin: 40vh auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.spinner>div {
+    background-color: #eee;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+    0%,
+    40%,
+    100% {
+        -webkit-transform: scaleY(0.4)
+    }
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes sk-stretchdelay {
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
